@@ -1,0 +1,79 @@
+Path:
+POST /auth/register ->To register the user
+->auth router
+-->auth Controller
+
+
+Server Library:
+bcrypt -> For password hash and comparison
+body-parser -> Request data parsing
+cookie-parser -> For cookies parsing
+express ->Webframework
+helmet -> for securing headers
+jsonwebtoken -> for  generating token and verification
+mongoose -> Mongo db ORM
+morgan -> Request logger
+multer -> For file upload
+
+Front-end:
+react
+bootstrap
+react-router-dom -> for component navigation
+google-fonts and icons
+
+
+var name = "Ram Gawas"
+var age = 25
+var std ={
+	n : name,
+	a : age
+}
+//Output
+{
+	n : "Ram Gawas",
+	a : 25
+}
+
+var std={
+	name,
+	age
+}
+//Output
+{
+	name:"Ram Gawas"	,
+	age : 25
+}
+
+var {name,age} = std
+name-> "Ram Gawas"
+age -> 25
+x = ["Ram Gawas", "Rohit Gawas"]
+
+[a,b] = x
+a-> Ram
+b-> Rohit
+
+User : {
+	_id : 111
+	name : Ram Gawas
+	friends:[{userId: 112}]
+	frienRequest:[]
+	sentFriendRequest:[]
+}
+
+
+User : {
+	_id :112
+	Rohit Gawas
+	friends:[{userId : 111}]
+	friendRequest:[]
+	sentFriendRequest:[,{userId : 113}]
+}
+
+User : {
+	_id :113	
+	Rushi
+	friends:[]
+	friendRequest:[{userId : 112}]
+	sentFriendRequest:[]
+}
